@@ -156,14 +156,33 @@ body {
     transition: var(--transition);
 }
 
+.myProfile {
+
+    /* border: 2px solid red; */
+    margin-top: 5rem;
+    padding: 0rem;
+    height: 20vh;
+
+}
+
+.myProfile img {
+    margin-left:2rem;
+    width: 9rem;
+    border-radius: 5rem;
+    border: 3px solid rgb(203, 203, 18);
+
+}
+
 /* Hero Section */
 .hero {
     min-height: 100vh;
-    padding: 8rem 2rem 4rem;
+    padding: 0rem 2rem 4rem;
     display: flex;
     align-items: center;
     position: relative;
     overflow: hidden;
+    /* border: 2px solid red; */
+
 }
 
 .hero-content {
@@ -264,10 +283,29 @@ body {
     animation: float 6s infinite;
 }
 
-.float-element.html { top: 20%; left: 20%; animation-delay: 0s; }
-.float-element.css { top: 60%; left: 30%; animation-delay: 1s; }
-.float-element.js { top: 40%; left: 60%; animation-delay: 2s; }
-.float-element.react { top: 70%; left: 70%; animation-delay: 3s; }
+.float-element.html {
+    top: 20%;
+    left: 20%;
+    animation-delay: 0s;
+}
+
+.float-element.css {
+    top: 60%;
+    left: 30%;
+    animation-delay: 1s;
+}
+
+.float-element.js {
+    top: 40%;
+    left: 60%;
+    animation-delay: 2s;
+}
+
+.float-element.react {
+    top: 70%;
+    left: 70%;
+    animation-delay: 3s;
+}
 
 /* Section Styles */
 section {
@@ -586,10 +624,10 @@ section {
     border-bottom-color: var(--primary);
 }
 
-.form-group input:focus + label,
-.form-group textarea:focus + label,
-.form-group input:valid + label,
-.form-group textarea:valid + label {
+.form-group input:focus+label,
+.form-group textarea:focus+label,
+.form-group input:valid+label,
+.form-group textarea:valid+label {
     top: -0.5rem;
     font-size: 0.9rem;
     color: var(--primary);
@@ -647,25 +685,51 @@ section {
 
 /* Animations */
 @keyframes spin {
-    to { transform: rotate(360deg); }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.2); }
-    100% { transform: scale(1); }
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 @keyframes blob {
-    0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
-    50% { border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%; }
-    100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+    0% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+
+    50% {
+        border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+    }
+
+    100% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
 }
 
 @keyframes float {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
-    100% { transform: translateY(0); }
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 /* Responsive Design */
@@ -771,4 +835,4 @@ section {
     .btn {
         padding: 0.5rem 1rem;
     }
-} 
+}
