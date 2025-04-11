@@ -161,7 +161,9 @@ body {
     /* border: 2px solid red; */
     margin-top: 5rem;
     padding: 0rem;
-    height: 20vh;
+    height: 13vh;
+    border: 2px solid red;
+    margin-bottom: -8rem;
 
 }
 
@@ -170,7 +172,29 @@ body {
     width: 9rem;
     border-radius: 5rem;
     border: 3px solid rgb(203, 203, 18);
+    display: none;
 
+}
+
+@media only screen and (max-width:450px){
+    .myProfile img{
+        display: block;
+        margin: auto;
+
+    }
+}
+@media only screen and (min-width:450px) and (max-width:770px){
+
+    .myProfile img{
+        display: block;
+        margin: auto;
+    }
+}
+@media only screen and (min-width:770px){
+
+    .myProfile img{
+        display: block;
+    }
 }
 
 /* Hero Section */
