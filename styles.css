@@ -61,6 +61,7 @@ body {
     pointer-events: none;
     z-index: 9999;
     transition: transform 0.2s ease;
+    display: none;
 }
 
 .cursor-follower {
@@ -72,6 +73,16 @@ body {
     pointer-events: none;
     z-index: 9999;
     transition: transform 0.1s ease;
+    display: none;
+}
+media only screen and (max-width:2000px){
+.cursor{
+    display: block;
+}
+.cursor-follower{
+    display: block;
+}
+
 }
 
 /* Navigation */
