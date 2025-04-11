@@ -177,11 +177,15 @@ media only screen and (max-width:2000px){
 }
 
 .myProfile img {
-    margin-left:2rem;
-    width: 9rem;
+   margin-left:2rem;
     border-radius: 5rem;
-    border: 3px solid rgb(203, 203, 18);
     display: none;
+    width: 200px;
+    height: 200px;
+    background: none;
+    border-radius: 100%;
+    box-sizing: border-box;
+    border-bottom: 50px solid transparent;
 
 }
 
