@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
 </head>
 
 <body>
@@ -40,9 +43,9 @@
             <span></span>
         </div>
     </nav>
-
+    <!--profile section-->
     <div class="myProfile">
-        <img src="images/profile.jpg" alt="">
+        <img id="oval-shape" src="images/profile.jpg" alt="">
 
     </div>
 
@@ -235,7 +238,8 @@
                 </div>
                 <div class="project-content">
                     <h3>To-Do-List</h3>
-                    <p>It's a list of tasks you need to complete or things that you want to do. Most typically, they're organised in order of priority.</p>
+                    <p>It's a list of tasks you need to complete or things that you want to do. Most typically, they're
+                        organised in order of priority.</p>
                     <div class="project-links">
                         <a href="https://gaurav-2000.github.io/to-do-list/" class="btn small">
                             <i class="fas fa-external-link-alt"></i>
@@ -260,7 +264,8 @@
                 </div>
                 <div class="project-content">
                     <h3>Music Player </h3>
-                    <p>music player built using HTML and CSS. Features a clean interface with play/pause controls, track progress bar, volume adjustment, and a playlist display. </p>
+                    <p>music player built using HTML and CSS. Features a clean interface with play/pause controls, track
+                        progress bar, volume adjustment, and a playlist display. </p>
                     <div class="project-links">
                         <a href="https://gaurav-2000.github.io/music-player/" class="btn small">
                             <i class="fas fa-external-link-alt"></i>
@@ -286,7 +291,8 @@
                 </div>
                 <div class="project-content">
                     <h3>Currency Converter</h3>
-                    <p>A universal currency converter is an online application that enables the easy conversion of currency values based on present-day exchange rates.</p>
+                    <p>A universal currency converter is an online application that enables the easy conversion of
+                        currency values based on present-day exchange rates.</p>
                     <div class="project-links">
                         <a href="https://gaurav-2000.github.io/Currency-Converter/" class="btn small">
                             <i class="fas fa-external-link-alt"></i>
@@ -342,23 +348,23 @@
                     <label for="message">Your Message</label>
                 </div>
                 <button type="submit" class="btn primary">
-                    <span>Send Message</span>
+                    <span onclick="sendMail()">Send Message</span>
                     <i class="fas fa-paper-plane"></i>
                 </button>
             </form>
         </div>
         <div class="social-links">
             <a href="https://github.com/Gaurav-2000" class="social-link"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/gaurav-kumar-1190a3308/" class="social-link"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/gaurav-kumar-1190a3308/" class="social-link"><i
+                    class="fab fa-linkedin"></i></a>
             <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
             <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
         </div>
     </section>
-
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <p>&copy; 2024 Gaurav. All rights reserved.</p>
+            <p>&copy; 2024 Gaurav All rights reserved.</p>
             <div class="footer-links">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
